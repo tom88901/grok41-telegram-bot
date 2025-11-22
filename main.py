@@ -57,5 +57,5 @@ application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, chat))
 # Chạy Flask
 if __name__ == '__main__':
     # Set webhook (chạy 1 lần khi deploy)
-    application.bot.set_webhook(url=f"https://your-app-name.onrender.com/{TELEGRAM_TOKEN}")
+    application.bot.set_webhook(url=f"https://zhipu99.onrender.com/{TELEGRAM_TOKEN}")
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
